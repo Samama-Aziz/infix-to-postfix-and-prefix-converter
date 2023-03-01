@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  background-color: rgb(24, 24, 24);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  font: 1em sans-serif;
+  color: white;
+}
+
+.navbar span,
+.mainHeading span {
+  color: orange;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-items: center;
+  margin-top: 4rem;
+  width: 100%;
+  height: fit-content;
+  z-index: -1;
+  background-image: radial-gradient(circle, #555555 0%, #333333 100%);
+}
+
+.infixConverter {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 4.8rem 0;
+  padding: 2rem;
+  width: 60%;
+  height: fit-content;
+  border-radius: 1rem;
+  background-color: #333333;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.mainHeading {
+  display: flex;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.infixConverter hr {
+  width: 95%;
+  border: 0.05rem solid whitesmoke;
+  margin: 2rem 0;
+}
+
+.infixConverter h4 {
+  margin: 2rem 0;
+  text-align: center;
+  font: 1.45em sans-serif;
+  color: white;
+}
+
+.infixInput {
+  width: 50%;
+  height: 4rem;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #3b3b3b;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  padding: 0 1rem;
+  caret-color: white;
+  font: 1.45em sans-serif;
+  color: white;
+}
+
+.PostfixOrPrefix {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+  width: 80%;
+}
+
+.radio {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.5rem;
+  accent-color: orange;
+  background: #3b3b3b;
+}
+
+.PostfixOrPrefix h4 {
+  font: 1.5rem sans-serif;
+  color: white;
+  margin: 0 1rem;
+}
+
+.convertbtn {
+  min-height: 2rem;
+  padding: 1rem;
+  border: none;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: black;
+  border-radius: 2rem;
+  background-color: orange;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.convertbtn:hover {
+  color: orange;
+  background-color: black;
+}
+
+.Result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+  width: 80%;
+  font: 1.5em sans-serif;
+  font-weight: bold;
+}
+
+#Resulttitle {
+  color: orange;
+  margin-right: 0.5rem;
+}
+
+#result {
+  color: white;
+}
+
+@media only screen and (max-width: 800px) {
+  .infixConverter {
+    width: 70%;
+  }
+  .mainHeading {
+    font-size: 1.3rem;
+  }
+  .infixConverter h4 {
+    font-size: 1rem;
+  }
+  .infixInput {
+    width: 90%;
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="important-placement-subjects-for-cse-students.webp">
+    <title>Infix Converter</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1>Infix<span>Convertor</span></h1>
+    </nav>
+    <div class="main">
+        <div class="infixConverter">
+            <h1 class="mainHeading">Infix -><span>Postfix & Prefix</span></h1>
+            <hr>
+            <h4>Enter the Infix expression below in box without space</h4>
+            <input type="text" class="infixInput" id="infixInput" placeholder="A+B/C*(D-A)^F^H">
+            <div class="PostfixOrPrefix">
+                <input type="radio" class="radio" id="Postfix" name="same" checked>
+                <label for="Postfix">
+                    <h4>Postfix</h4>
+                </label>
+                <input type="radio" class="radio" id="Prefix" name="same">
+                <label for="Prefix">
+                    <h4>Prefix</h4>
+                </label>
+            </div>
+            <input type="button" value="Convert" id="convert" class="convertbtn" onclick="convert()">
+            <div class="Result">
+                <h3 id="Resulttitle">
+                    </h2>
+                    <h3 id="result"></h3>
+            </div>
+        </div>
+ 
+    <script src="./index.js"></script>
+</body>
+
+</html>
